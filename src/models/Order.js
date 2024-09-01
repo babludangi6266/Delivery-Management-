@@ -6,7 +6,7 @@ const orderSchema = new mongoose.Schema({
     required: true,
     unique: true,
     default: () => {
-      return Math.random().toString(36).substr(2, 6).toUpperCase(); // Generates a unique 5-6 character alphanumeric code
+      return Math.random().toString(36).substr(2, 6).toUpperCase(); 
     }
   },
   customerName: {

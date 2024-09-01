@@ -6,7 +6,7 @@ import orderRoutes from './routes/orderRoutes.js';
 import driverRoutes from './routes/driverRoutes.js';
 import routeRoutes from './routes/routeRoutes.js';
 import paymentRoutes from './routes/paymentRoutes.js';
-import { notFound, errorHandler } from './middlewares/errorMiddleware.js'; // Import error handling middleware
+import { notFound, errorHandler } from './middlewares/errorMiddleware.js'; 
 
 dotenv.config();
 
@@ -39,7 +39,6 @@ app.use(notFound);
 // Error handling middleware
 app.use(errorHandler);
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

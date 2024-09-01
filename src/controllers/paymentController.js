@@ -24,10 +24,10 @@ export const calculateDriverPayment = async (req, res) => {
     });
 
     // Calculate total time spent online (in hours)
-    const totalTimeOnline = calculateTotalTimeOnline(driver); // Implement this function
+    const totalTimeOnline = calculateTotalTimeOnline(driver); 
 
     // Calculate total distance traveled (in km)
-    const totalDistanceTraveled = calculateTotalDistance(driver); // Implement this function
+    const totalDistanceTraveled = calculateTotalDistance(driver); 
 
     // Calculate total payment
     const totalPayment =
